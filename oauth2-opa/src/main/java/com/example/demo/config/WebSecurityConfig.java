@@ -10,8 +10,6 @@ import org.springframework.security.access.vote.UnanimousBased;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.*;
 
-import org.openpolicyagent.voter.OPAVoter;
-
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -27,7 +25,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public AccessDecisionManager accessDecisionManager() {
         List<AccessDecisionVoter<? extends Object>> decisionVoters = Arrays
-                .asList(new OPAVoter("http://localhost:8181/v1/data/http/authz/allow"));
+                .asList(new com.example.demo.openpolicyagent.voter.OPAVoter("http://localhost:8181/v1/data/http/authz/allow"));
         return new UnanimousBased(decisionVoters);
     }
 

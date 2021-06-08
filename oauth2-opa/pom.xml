@@ -16,12 +16,7 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>org.openpolicyagent</groupId>
-			<artifactId>voter</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>		
+	<dependencies>		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-oauth2-client</artifactId>
