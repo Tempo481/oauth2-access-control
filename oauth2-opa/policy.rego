@@ -1,11 +1,10 @@
 package example.authz
 
-default allow = false
+default allow = true
 
 allow {
     input.method = "GET"
     input.path = ["sample"]
-    input.subject.user = id
 }
 
 allow {
@@ -13,5 +12,5 @@ allow {
 }
 
 is_admin {
-    input.roles = "ROLE_ADMIN"
+    input.roles = "ROLE_USER"
 }
