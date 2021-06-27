@@ -16,7 +16,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <stringProp name="LoopController.loops">100</stringProp>
+          <stringProp name="LoopController.loops">1000</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">4</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
@@ -49,7 +49,7 @@
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJLYUQ3WGNMLTVfMGxFZGp6dGw4ZkNxclIyUi11Q2YxQnRDeW5nU2ZJN21nIn0.eyJleHAiOjE2MjQ1NDUwNjMsImlhdCI6MTYyNDU0NDc2MywianRpIjoiOWYzYmVkMDMtYzQ0Zi00ZmNlLThlODMtYjA5OGM0NTBkODJiIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDgwL2F1dGgvcmVhbG1zL3NhbXBsZSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkZTE2ZWRkOS1hNjU0LTQ3NjktYjcxYy0zZmFmMzQ1ODM4OTAiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzYW1wbGUtYXBwIiwic2Vzc2lvbl9zdGF0ZSI6IjM1MDNlYTk1LWVjZWYtNDMxNi1iODdjLWNkZjQ3ODM0MDk3OCIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl0sInByZWZlcnJlZF91c2VybmFtZSI6InVzZXIifQ.qpyBvgPAz-5kz808gk5xIrT6blen-PdGLtBabQmfgEAx9owr7v5Yj58_iG6djX7vCTgQLNRmuWAYrUC88wnYLDn_BNOxIz08-KFih2S61YbMaY66fJ2lpH3iB4EEsnq2K4QhyNuae5FUTJYMDlGoKrwjakmjl_ixqz0WMqpsiQoVilDvU6XnaBPBjCIqcwGqeYKF3YDFelp0lSJ1y5Zyrrr5yr7EorwkGlpe9jphNg1x6lYhRpNRpQhvcpIyjd1rP96nG6y7hGfnZdiuQRPa8no1WvJGOpjM6BVYXPjzDr_YvGPKC0UGUkj1cXwB38mZT7RRVUE28MPdD-y79gA0nQ </stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJzTkVMd0JfN3NHUldKZXF5aHM0Y1hfbDA2UF9ONjRhNkl4Zll1U3M3bV9RIn0.eyJleHAiOjE2MjQ4MzMyNTAsImlhdCI6MTYyNDgzMjk1MCwianRpIjoiNmFhOWVlMTgtNjUyNy00ZTE2LTliYTUtOGUwMjZkNmY3NjJjIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDgwL2F1dGgvcmVhbG1zL3NhbXBsZSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2MTgyZTNlNC0wM2I0LTRmYTQtYTVkMi02NTU5YTk3M2U1MzciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzYW1wbGUtYXBwIiwic2Vzc2lvbl9zdGF0ZSI6IjRmNThiZDQzLTE4OTYtNDE2YS05N2U3LWJkNTgyNWE4ZjZiZSIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl0sInByZWZlcnJlZF91c2VybmFtZSI6InVzZXIifQ.Rg9Ogu0TFoJ5bFNSjMYG1CcQTp0VUnXhMmlUs9VPBP2gxQL9MaC3te5tf2FfDKWpbzig55ZM6kumlQ_I-AVmxxta9l2aTQmzGUmHFCuVw4PtNT-bp-esAdCUxyoZT4-zPAfkaml955TvA6vThKomO4LTvtFboNaYrBxB3biHxgemT2xojcSUlXEAM-lr6k9kUQcHonV1GzrgDTbwTwOt0MxcbUA8iGXeAHEx5q6HlnolM4On4ji67c2JoO2QNW-6LuV18ei-C_Ch49nhiQ9KotSrsMsnCe2o3RXomwz2zw1AleBeAH6XoUF6T-sdkyVDE-mQsEVNZ6vfL7HFMHd9tQ </stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
@@ -163,7 +163,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">C:\Users\abc\Documents\h-da\Bachelorarbeit\oauth2-access-control\jmeter-results\Test results2.xml</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="true">
