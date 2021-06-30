@@ -21,6 +21,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
 	        .authorizeRequests(authorize -> authorize
         		.mvcMatchers("/sample").hasAuthority("ROLE_USER")
+        		.mvcMatchers("/document/all").permitAll()
+        		.mvcMatchers("/document/{i}").permitAll()
 	            .anyRequest().authenticated()
 	        )	
 	        .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt);
