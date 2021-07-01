@@ -1,17 +1,8 @@
-CREATE TABLE document (
-    id int,
-    document varchar(255)
-);
-
-INSERT INTO document (document) VALUES ('document1);
-INSERT INTO document (document) VALUES ('document2);
-INSERT INTO document (document) VALUES ('document3);
-INSERT INTO document (document) VALUES ('document4);
-INSERT INTO document (document) VALUES ('document5);
-INSERT INTO document (document) VALUES ('document6);
-INSERT INTO document (document) VALUES ('document7);
-INSERT INTO document (document) VALUES ('document8);
-INSERT INTO document (document) VALUES ('document9);
-INSERT INTO document (document) VALUES ('document10);
-INSERT INTO document (document) VALUES ('document11);
-INSERT INTO document (document) VALUES ('document12);
+-- documents
+INSERT INTO document (content, owner) VALUES ('Alice Document 1', 'alice');
+INSERT INTO document (content, owner) VALUES ('Bob Document 1', 'bob');
+INSERT INTO document (content, owner) VALUES ('Bob Document 2', 'bob');
+INSERT INTO document (content, owner) VALUES ('David Document 1', 'david');
+INSERT INTO document (content, owner) VALUES ('David Document 2', 'david');
+INSERT INTO document (content, owner) VALUES ('Carol Document 1', 'carol');
+INSERT INTO document (content, owner) VALUES ('John Document 1', 'john');
