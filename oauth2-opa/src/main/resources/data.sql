@@ -1,3 +1,8 @@
+CREATE TABLE Persons (
+    id int,
+    document varchar(255)
+);
+
 INSERT INTO document (document) VALUES ('document1);
 INSERT INTO document (document) VALUES ('document2);
 INSERT INTO document (document) VALUES ('document3);
