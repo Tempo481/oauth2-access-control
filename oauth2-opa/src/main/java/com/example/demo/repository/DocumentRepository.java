@@ -3,7 +3,7 @@ package com.example.demo.repository;
 import org.springframework.data.jpa.repository.*;
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.domain.Document;
+import com.example.demo.entity.Document;
 
 /**
  * Spring Data SQL repository for the Document entity.

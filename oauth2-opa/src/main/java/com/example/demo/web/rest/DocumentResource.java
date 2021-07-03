@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.demo.domain.Document;
+import com.example.demo.entity.Document;
 import com.example.demo.repository.DocumentRepository;
 import com.example.demo.service.DocumentService;
 

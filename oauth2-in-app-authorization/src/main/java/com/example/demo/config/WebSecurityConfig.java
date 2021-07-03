@@ -20,8 +20,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
 	        .authorizeRequests(authorize -> authorize
-        		.mvcMatchers("/sample").hasAuthority("ROLE_USER")
-        		.mvcMatchers("/document/all").permitAll()
         		.mvcMatchers("/document/{i}").permitAll()
 	            .anyRequest().permitAll()
 	        )	

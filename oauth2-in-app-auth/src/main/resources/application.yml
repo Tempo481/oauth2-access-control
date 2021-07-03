@@ -6,6 +6,9 @@ spring:
           issuer-uri: http://localhost:9080/auth/realms/sample
           jwk-set-uri: http://localhost:9080/auth/realms/sample/protocol/openid-connect/certs
   h2:
-    console:      enabled: true
+    console:
+      enabled: true
   jpa:
-    generate-ddl: true   
+    generate-ddl: true
+    hibernate:      ddl-auto: create       
+    

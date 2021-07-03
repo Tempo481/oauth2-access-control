@@ -31,7 +31,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authenticated()
                 .accessDecisionManager(accessDecisionManager())
                 .and()
-//                .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt);
                 .oauth2ResourceServer(oauth2ResourceServer ->
                 	oauth2ResourceServer
                         .jwt(jwt -> jwt
