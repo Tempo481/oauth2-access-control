@@ -18,8 +18,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1000</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">300</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">300</stringProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">150</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -34,7 +34,7 @@
           <stringProp name="HTTPSampler.port">8080</stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">sample</stringProp>
+          <stringProp name="HTTPSampler.path">documents</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -49,7 +49,7 @@
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJzTkVMd0JfN3NHUldKZXF5aHM0Y1hfbDA2UF9ONjRhNkl4Zll1U3M3bV9RIn0.eyJleHAiOjE2MjUwODg0MjgsImlhdCI6MTYyNTA4ODEyOCwianRpIjoiODU5NDQ5YTMtMGUzMC00OTIxLTg4ZDEtZTQxZGI1ZjQ0Y2UxIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDgwL2F1dGgvcmVhbG1zL3NhbXBsZSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2MTgyZTNlNC0wM2I0LTRmYTQtYTVkMi02NTU5YTk3M2U1MzciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzYW1wbGUtYXBwIiwic2Vzc2lvbl9zdGF0ZSI6ImQ3ZWMyMTNjLWE3NzEtNGRlMy1iNTk1LTgxYzkzYTUzZjU4YSIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl0sInByZWZlcnJlZF91c2VybmFtZSI6InVzZXIifQ.cEEUKW-kxi9PsQfy02LfxO-3IwF_jP4LWe9BzTm96I_uNC4003z4NevE4Xm_uqtzGqzQTXPewgtsI9CC2O8lmEiHBgSiqxiBfE0op9DVl6t2bLolswu7BvXWYwlWQ2C5Z_81RPc-Fk0O1vnm7Ki9WHK--4uKYzEKTir_2ffZcppbmyjvf_VkMaNdV3HDThhlw_mvh127HaqaNC3ZbqdHZpmoyY-E1rMmpz_Bi7n-RN1sJxpFtaT9PaB9omgqqfu9bfpdYo9xfF19leQte-w0jqAFDlFgxUL3vGBaG2lQ18vOucS9V02bElEFlgBPi03Rmp9QjSGdSsj7Ex9zAimy1A</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJzTkVMd0JfN3NHUldKZXF5aHM0Y1hfbDA2UF9ONjRhNkl4Zll1U3M3bV9RIn0.eyJleHAiOjE2MjU0MTU2MTQsImlhdCI6MTYyNTQxNTMxNCwianRpIjoiNWZiNGUwNzMtY2I0NS00MTk3LWI2YzEtYzBjMjIwN2M5ZmI5IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDgwL2F1dGgvcmVhbG1zL3NhbXBsZSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI2MTgyZTNlNC0wM2I0LTRmYTQtYTVkMi02NTU5YTk3M2U1MzciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzYW1wbGUtYXBwIiwic2Vzc2lvbl9zdGF0ZSI6IjE2OTVkYjE5LTEzMmQtNDIyOS05Y2FhLTZjY2Q5N2RhYmU1NSIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl0sInByZWZlcnJlZF91c2VybmFtZSI6InVzZXIifQ.kA72NT7ajOxvj2kM_8hyhG55cYwsXYDblcKXJXlHeOqg2bDEOFwphyyWZeMz7SgYYnoh6wvdfrtT6rxhnksEy3rbatxQpWLAAgbI5b7ZBkiXaEVfXQpzZ2ZegxkoUAtChwDjIbeGOa-MpDdjkH2QZZuLKfpz4HGtk8vMp1E2R8UVJ74pQN2FjiB2DfjhjSS7JZCKzaJ9v6-Pplp4iflh0p043v-x0HfjkvJglRxHVJ17lHjRw39Yp9Vg8AXS_Qk9qwYAo7jXSm4Sz3BFIdK5b7NosIAp9z2vhcvjO1qYYcaWc6I4d9gte-lZ86xV8yD3nbdNsC3jhNNOnS5OGA732w </stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>

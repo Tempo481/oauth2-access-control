@@ -11,6 +11,13 @@ allow {
 
 allow {
     input.method == "GET"
+    input.path == ["documents"]
+    token.payload.roles[_] == "ROLE_USER"
+#    user_owns_token
+}
+
+allow {
+    input.method == "GET"
     input.path == ["h2-console"]
 }
 

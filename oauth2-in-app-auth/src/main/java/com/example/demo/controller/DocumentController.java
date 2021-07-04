@@ -19,7 +19,6 @@ import com.example.demo.service.DocumentService;
  * REST controller for managing {@link com.example.demo.entity.Document}.
  */
 @RestController
-@RequestMapping("/api")
 public class DocumentController {
 
     private final Logger log = LoggerFactory.getLogger(DocumentController.class);
