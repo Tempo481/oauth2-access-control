@@ -9,6 +9,11 @@ allow {
 #    user_owns_token
 }
 
+allow {
+    input.method == "GET"
+    input.path == ["h2-console"]
+}
+
 # Ensure that the token was issued to the user supplying it.
 user_owns_token { input.user == token.payload.azp }
 

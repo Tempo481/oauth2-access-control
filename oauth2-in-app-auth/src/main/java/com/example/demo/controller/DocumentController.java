@@ -1,4 +1,4 @@
-package com.example.demo.web.rest;
+package com.example.demo.controller;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -16,21 +16,19 @@ import com.example.demo.repository.DocumentRepository;
 import com.example.demo.service.DocumentService;
 
 /**
- * REST controller for managing {@link com.mycompany.myapp.domain.Document}.
+ * REST controller for managing {@link com.example.demo.entity.Document}.
  */
 @RestController
 @RequestMapping("/api")
-public class DocumentResource {
+public class DocumentController {
 
-    private final Logger log = LoggerFactory.getLogger(DocumentResource.class);
-
-    private static final String ENTITY_NAME = "document";
+    private final Logger log = LoggerFactory.getLogger(DocumentController.class);
 
     private final DocumentService documentService;
 
     private final DocumentRepository documentRepository;
 
-    public DocumentResource(DocumentService documentService, DocumentRepository documentRepository) {
+    public DocumentController(DocumentService documentService, DocumentRepository documentRepository) {
         this.documentService = documentService;
         this.documentRepository = documentRepository;
     }

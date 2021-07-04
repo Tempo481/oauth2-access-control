@@ -1,18 +1,26 @@
 package com.example.demo.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import java.io.Serializable;
+import javax.persistence.*;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
+/**
+ * A Document.
+ */
 @Entity
-public class Document {
+@Table(name = "document")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+public class Document implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String content;
-    private String owner;
+
+    @Column(name = "name")
+    private String name;
 
     public Long getId() {
         return id;
@@ -22,19 +30,47 @@ public class Document {
         this.id = id;
     }
 
-    public String getContent() {
-        return content;
+    public Document id(Long id) {
+        this.id = id;
+        return this;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public String getName() {
+        return this.name;
     }
 
-    public String getOwner() {
-        return owner;
+    public Document name(String name) {
+        this.name = name;
+        return this;
     }
 
-    public void setOwner(String owner) {
-        this.owner = owner;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Document)) {
+            return false;
+        }
+        return id != null && id.equals(((Document) o).id);
+    }
+
+    @Override
+    public int hashCode() {
+        // see https://vladmihalcea.com/how-to-implement-equals-and-hashcode-using-the-jpa-entity-identifier/
+        return getClass().hashCode();
+    }
+
+    // prettier-ignore
+    @Override
+    public String toString() {
+        return "Document{" +
+            "id=" + getId() +
+            ", name='" + getName() + "'" +
+            "}";
     }
 }
