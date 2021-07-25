@@ -49,13 +49,13 @@
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJodDBCSGQ4aDFRX0NQdU9MTWoyVGppQkpkNnVrSVJPdXhGbWltYkVDYnNrIn0.eyJleHAiOjE2MjcwNDU1ODYsImlhdCI6MTYyNzA0Mzc4NiwiYXV0aF90aW1lIjoxNjI3MDQzNzUxLCJqdGkiOiJmNzhkYzg0MC1hODFkLTQxZDMtYWNmNi1iODE0N2Q0NzFlNjAiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwODAvYXV0aC9yZWFsbXMvc2FtcGxlIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjhjZjg5MTQwLWU4ZDYtNDg1MC1iNDE2LTNjY2VkYTk4MmVjMiIsInR5cCI6IkJlYXJlciIsImF6cCI6InNhbXBsZS1hcHAiLCJzZXNzaW9uX3N0YXRlIjoiMjRiOGE3OWItMDlhZi00NDAxLTkyMzMtNGFlNTczZGQ5MDljIiwiYWNyIjoiMCIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXNhbXBsZSIsIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXNhbXBsZSIsIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXSwibmFtZSI6IkZpcnN0TmFtZU9mVXNlciBMYXN0TmFtZU9mVXNlciIsImF0dHJpYnV0ZTEiOiJVc2VyQXR0cmlidXRlMSIsImdyb3VwcyI6WyIvVXNlcnMiXSwicHJlZmVycmVkX3VzZXJuYW1lIjoidXNlciIsImdpdmVuX25hbWUiOiJGaXJzdE5hbWVPZlVzZXIiLCJmYW1pbHlfbmFtZSI6Ikxhc3ROYW1lT2ZVc2VyIiwiZW1haWwiOiJ1c2VyQG1haWwuY29tIn0.uRD2EBN2hnkdFbX4SSgxsx6VvgL1m-mHdHl9FkwLY2dSxtpR-Yycc8LEbRpHPV84wHgPFPzRimK8WxXZTq5vq9Op9IIR_UTLGOD2Lftq6ZPIVGRLiQbjZDzOgtu-w90GikxqvcOIVWZ6UkQjhPkxJWROB8MAkD5hf6-ccyGuPJ2ZcdobBIBbX2nsdsiNjn3bEWKWGxlPkBUcn_MxuFZOkxyX1YKhOHcUWZI_k0SLZn7o3aQDg_uN1OGR9DN-p6C-QU6Ys4EORGQzZLwlSh2vp7_tdOaLM1MBpX1h8_wAshm8EqNl0z4cIzVlkIWenynCu-AnWXBle7uwhayfT8kQpg</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhUV83TjRENmN5MEVnVnVlR2ZrSWRobG5Ud1FoYi1IVDJlM21wWWFHV0o4In0.eyJleHAiOjE2MjcyNDcyMjAsImlhdCI6MTYyNzI0NTQyMCwianRpIjoiYTI5OTdmYjYtMGU2Yi00NDg5LTk2NTUtYmQ0NzA3ZWE5MjE0IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDgwL2F1dGgvcmVhbG1zL3NhbXBsZSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJiZjQ5Zjg3Zi02NmQ5LTQzY2UtYTc0Zi04MjMzZGNmZjgzYWIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzYW1wbGUtYXBwIiwic2Vzc2lvbl9zdGF0ZSI6ImVlNTQwOWZlLTFiMzUtNGIzYS1hNTgyLTg4ZjdjNGFkZmRmMCIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl0sIm5hbWUiOiJGaXJzdE5hbWVPZlVzZXIgTGFzdE5hbWVPZlVzZXIiLCJhdHRyaWJ1dGUxIjoiVXNlckF0dHJpYnV0ZTEiLCJncm91cHMiOlsiL1VzZXJzIl0sInByZWZlcnJlZF91c2VybmFtZSI6InVzZXIiLCJnaXZlbl9uYW1lIjoiRmlyc3ROYW1lT2ZVc2VyIiwiZmFtaWx5X25hbWUiOiJMYXN0TmFtZU9mVXNlciIsImVtYWlsIjoidXNlckBtYWlsLmNvbSJ9.kJzeU-FDif7MvKfBPAS9ZLGdN6tRn9Rv0rST0xahTz0ZD_LBAq_aJXQkb4pzX_L-pUY-rXej_uKIqb_tacKPmORsT_xSu5WSTS7Qtq7hUxCg82TlEfgkZvMoIe3rBbRbLFAW4xlIDUcByO9NJbpPI5F7bBxV9DFSM7d1dnTGnq2zTRnwgMHB-FLYgAZHhplR84OhQZ5UEfkx7SkzuAae_nAvhSJVBYOBo_qabJJtBHy4FLcMEytqI9YdNY3UXqiZplu3WNoHQGq7-WyqhCyKwtq2KZePZxMxdFer3P4nzWBkg3oCfZvVCe-PVR579RDd4nKAVHF5v1VQwfNY4nZ6Eg </stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -89,118 +89,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Users\matthias.adrian\Documents\Bachelorarbeit\oauth2-access-control\jmeter-results\Test results.txt</stringProp>
-        </ResultCollector>
-        <hashTree/>
-        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
-          <objProp>
-            <name>saveConfig</name>
-            <value class="SampleSaveConfiguration">
-              <time>true</time>
-              <latency>true</latency>
-              <timestamp>true</timestamp>
-              <success>true</success>
-              <label>true</label>
-              <code>true</code>
-              <message>true</message>
-              <threadName>true</threadName>
-              <dataType>true</dataType>
-              <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
-              <responseData>false</responseData>
-              <samplerData>false</samplerData>
-              <xml>false</xml>
-              <fieldNames>true</fieldNames>
-              <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
-              <responseDataOnError>false</responseDataOnError>
-              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-              <assertionsResultsToSave>0</assertionsResultsToSave>
-              <bytes>true</bytes>
-              <sentBytes>true</sentBytes>
-              <url>true</url>
-              <threadCounts>true</threadCounts>
-              <idleTime>true</idleTime>
-              <connectTime>true</connectTime>
-            </value>
-          </objProp>
-          <stringProp name="filename"></stringProp>
-        </ResultCollector>
-        <hashTree/>
-        <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
-          <objProp>
-            <name>saveConfig</name>
-            <value class="SampleSaveConfiguration">
-              <time>true</time>
-              <latency>true</latency>
-              <timestamp>true</timestamp>
-              <success>true</success>
-              <label>true</label>
-              <code>true</code>
-              <message>true</message>
-              <threadName>true</threadName>
-              <dataType>true</dataType>
-              <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
-              <responseData>false</responseData>
-              <samplerData>false</samplerData>
-              <xml>false</xml>
-              <fieldNames>true</fieldNames>
-              <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
-              <responseDataOnError>false</responseDataOnError>
-              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-              <assertionsResultsToSave>0</assertionsResultsToSave>
-              <bytes>true</bytes>
-              <sentBytes>true</sentBytes>
-              <url>true</url>
-              <threadCounts>true</threadCounts>
-              <idleTime>true</idleTime>
-              <connectTime>true</connectTime>
-            </value>
-          </objProp>
-          <stringProp name="filename">C:\Users\abc\Documents\h-da\Bachelorarbeit\oauth2-access-control\jmeter-results\Test results2.xml</stringProp>
-        </ResultCollector>
-        <hashTree/>
-        <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="true">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
-          <objProp>
-            <name>saveConfig</name>
-            <value class="SampleSaveConfiguration">
-              <time>true</time>
-              <latency>true</latency>
-              <timestamp>true</timestamp>
-              <success>true</success>
-              <label>true</label>
-              <code>true</code>
-              <message>true</message>
-              <threadName>true</threadName>
-              <dataType>true</dataType>
-              <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
-              <responseData>false</responseData>
-              <samplerData>false</samplerData>
-              <xml>false</xml>
-              <fieldNames>true</fieldNames>
-              <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
-              <responseDataOnError>false</responseDataOnError>
-              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-              <assertionsResultsToSave>0</assertionsResultsToSave>
-              <bytes>true</bytes>
-              <sentBytes>true</sentBytes>
-              <url>true</url>
-              <threadCounts>true</threadCounts>
-              <idleTime>true</idleTime>
-              <connectTime>true</connectTime>
-            </value>
-          </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">C:\Users\abc\Documents\h-da\Bachelorarbeit\oauth2-access-control\jmeter-results\Test results.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>

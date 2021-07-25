@@ -1,0 +1,100 @@
+<html xmlns:jmeter="http://jmeter.apache.org/">
+   <title>Schematic view of Test Plan</title>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <style>
+ul.tree, ul.tree ul {
+    list-style-type: none;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAKAQMAAABPHKYJAAAAA1BMVEWIiIhYZW6zAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1ggGExMZBky19AAAAAtJREFUCNdjYMAEAAAUAAHlhrBKAAAAAElFTkSuQmCC') repeat-y;
+    margin: 0;
+    padding: 0;
+}
+ul.tree ul {
+    margin-left: 10px;
+}
+ul.tree li {
+    margin: 0;
+    padding: 0 12px;
+    line-height: 20px;
+    background:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAUAQMAAACK1e4oAAAABlBMVEUAAwCIiIgd2JB2AAAAAXRSTlMAQObYZgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YIBhQIJYVaFGwAAAARSURBVAjXY2hgQIf/GTDFGgDSkwqATqpCHAAAAABJRU5ErkJggg==') no-repeat;
+    color: #369;
+}
+ul.tree li:last-child {
+    background: #fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAUAQMAAACK1e4oAAAABlBMVEUAAwCIiIgd2JB2AAAAAXRSTlMAQObYZgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YIBhQIIhs+gc8AAAAQSURBVAjXY2hgQIf/GbAAAKCTBYBUjWvCAAAAAElFTkSuQmCC') no-repeat;
+}
+</style>
+   </head>
+   <body>
+      <ul class="tree" id="tree">
+         <li><b>load test </b>
+            "Test Plan" 
+            (globalVars:[],
+            executeTearDownThreadsOnShutdown: true)
+            <br>
+            &nbsp;&nbsp;&nbsp;Comments: <i style="color:green"></i></li>
+         <li>
+            <ul>
+               <li><b>run</b>
+                  "Thread Group" 
+                  (
+                  threads: "100",
+                  loops: "1000",
+                  ramp-up: "150"
+                  )
+                  </li>
+               <li>
+                  <ul>
+                     <li><b>http request</b>
+                        "HTTP Request" 
+                        (method: "GET",
+                        url: "
+                        ://localhost:8080/documents",
+                        
+                        body: [
+                        
+                        ]
+                        ,
+                        upload-files: [
+                        
+                        ]
+                        )
+                        </li>
+                     <li>
+                        <ul>
+                           <li><b>add headers</b>
+                              "HTTP Header Manager" 
+                              (headers:[
+                              
+                              {"Authorization"=
+                              "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJodDBCSGQ4aDFRX0NQdU9MTWoyVGppQkpkNnVrSVJPdXhGbWltYkVDYnNrIn0.eyJleHAiOjE2MjcwNDU1ODYsImlhdCI6MTYyNzA0Mzc4NiwiYXV0aF90aW1lIjoxNjI3MDQzNzUxLCJqdGkiOiJmNzhkYzg0MC1hODFkLTQxZDMtYWNmNi1iODE0N2Q0NzFlNjAiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwODAvYXV0aC9yZWFsbXMvc2FtcGxlIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjhjZjg5MTQwLWU4ZDYtNDg1MC1iNDE2LTNjY2VkYTk4MmVjMiIsInR5cCI6IkJlYXJlciIsImF6cCI6InNhbXBsZS1hcHAiLCJzZXNzaW9uX3N0YXRlIjoiMjRiOGE3OWItMDlhZi00NDAxLTkyMzMtNGFlNTczZGQ5MDljIiwiYWNyIjoiMCIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXNhbXBsZSIsIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXNhbXBsZSIsIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXSwibmFtZSI6IkZpcnN0TmFtZU9mVXNlciBMYXN0TmFtZU9mVXNlciIsImF0dHJpYnV0ZTEiOiJVc2VyQXR0cmlidXRlMSIsImdyb3VwcyI6WyIvVXNlcnMiXSwicHJlZmVycmVkX3VzZXJuYW1lIjoidXNlciIsImdpdmVuX25hbWUiOiJGaXJzdE5hbWVPZlVzZXIiLCJmYW1pbHlfbmFtZSI6Ikxhc3ROYW1lT2ZVc2VyIiwiZW1haWwiOiJ1c2VyQG1haWwuY29tIn0.uRD2EBN2hnkdFbX4SSgxsx6VvgL1m-mHdHl9FkwLY2dSxtpR-Yycc8LEbRpHPV84wHgPFPzRimK8WxXZTq5vq9Op9IIR_UTLGOD2Lftq6ZPIVGRLiQbjZDzOgtu-w90GikxqvcOIVWZ6UkQjhPkxJWROB8MAkD5hf6-ccyGuPJ2ZcdobBIBbX2nsdsiNjn3bEWKWGxlPkBUcn_MxuFZOkxyX1YKhOHcUWZI_k0SLZn7o3aQDg_uN1OGR9DN-p6C-QU6Ys4EORGQzZLwlSh2vp7_tdOaLM1MBpX1h8_wAshm8EqNl0z4cIzVlkIWenynCu-AnWXBle7uwhayfT8kQpg"
+                              ])
+                              </li>
+                        </ul>
+                     </li>
+                     <li><b>write samples</b>
+                        "View Results Tree" 
+                        (filename: "C:\Users\matthias.adrian\Documents\Bachelorarbeit\oauth2-access-control\jmeter-results\Test
+                        results.txt",
+                        xml: false,
+                        errorsOnly: false,
+                        successOnly: )
+                        </li>
+                     <li><b>write samples</b>
+                        "Aggregate Report" </li>
+                     <li><b>write samples</b>
+                        "Graph Results" 
+                        (filename: "C:\Users\abc\Documents\h-da\Bachelorarbeit\oauth2-access-control\jmeter-results\Test
+                        results2.xml",
+                        xml: false,
+                        errorsOnly: false,
+                        successOnly: )
+                        </li>
+                     <li><b>write samples</b>
+                        "Response Time Graph" </li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+      </ul>
+   </body>
+</html>
