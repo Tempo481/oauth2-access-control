@@ -30,7 +30,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.domain">192.168.0.104</stringProp>
           <stringProp name="HTTPSampler.port">8080</stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -49,7 +49,7 @@
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJodDBCSGQ4aDFRX0NQdU9MTWoyVGppQkpkNnVrSVJPdXhGbWltYkVDYnNrIn0.eyJleHAiOjE2MjczMTk1NTIsImlhdCI6MTYyNzMxNzc1MiwianRpIjoiMDU2ZWY3NWQtYzIyMC00NDhjLThjYTYtNjhjMjdhZmVkODUwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDgwL2F1dGgvcmVhbG1zL3NhbXBsZSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI4Y2Y4OTE0MC1lOGQ2LTQ4NTAtYjQxNi0zY2NlZGE5ODJlYzIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzYW1wbGUtYXBwIiwic2Vzc2lvbl9zdGF0ZSI6ImNlZWRkYjUxLWFhOGItNDI0ZS04ZDA4LTdkMDdlNWU0MjZkNSIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl0sIm5hbWUiOiJGaXJzdE5hbWVPZlVzZXIgTGFzdE5hbWVPZlVzZXIiLCJhdHRyaWJ1dGUxIjoiVXNlckF0dHJpYnV0ZTEiLCJncm91cHMiOlsiL1VzZXJzIl0sInByZWZlcnJlZF91c2VybmFtZSI6InVzZXIiLCJnaXZlbl9uYW1lIjoiRmlyc3ROYW1lT2ZVc2VyIiwiZmFtaWx5X25hbWUiOiJMYXN0TmFtZU9mVXNlciIsImVtYWlsIjoidXNlckBtYWlsLmNvbSJ9.ADxKX-ofcbQJ6asMqQ-HVhADoz0QJ7vY84Fs-3ueyHYaYuKbrOsyHXxO5gcBQDXp747RdrVmfiPSeI4ZLfGUIdTLADq44zjxRXdURx94-_WfnoO6nmprRvnu26jpAz3UHGQwmtBdcvT6vRkkVKHMYyWVw--bXNh5ntv_QsGC9jtMTEbxY1LPbHoJ6pcNHYCp_lwslZ64kg8PFNR9-ghGInLZSUH1Qu4nG3-sBf6EDEKifZLueJW5xgMEXsI7k3BETh2HIsQx9KYWQglY_RGE5Qf9mRpriUisJCK7UH_UbHju6BTZ1KqzFdbaLdpQeRcrmxDmUjSanpMJE7KcQkopIQ</stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhUV83TjRENmN5MEVnVnVlR2ZrSWRobG5Ud1FoYi1IVDJlM21wWWFHV0o4In0.eyJleHAiOjE2MjczMzA5NjQsImlhdCI6MTYyNzMyNzM2NCwianRpIjoiMDU3NTVlZDEtYmE3MS00N2VkLTlkZDEtZWU5MjdjYTM2OWU0IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDgwL2F1dGgvcmVhbG1zL3NhbXBsZSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJiZjQ5Zjg3Zi02NmQ5LTQzY2UtYTc0Zi04MjMzZGNmZjgzYWIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzYW1wbGUtYXBwIiwic2Vzc2lvbl9zdGF0ZSI6ImEzZGJkNWJhLThiMzEtNDhmZi1hN2RiLTU2ODQ5ODNmZjNhYyIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl0sIm5hbWUiOiJGaXJzdE5hbWVPZlVzZXIgTGFzdE5hbWVPZlVzZXIiLCJhdHRyaWJ1dGUxIjoiVXNlckF0dHJpYnV0ZTEiLCJncm91cHMiOlsiL1VzZXJzIl0sInByZWZlcnJlZF91c2VybmFtZSI6InVzZXIiLCJnaXZlbl9uYW1lIjoiRmlyc3ROYW1lT2ZVc2VyIiwiZmFtaWx5X25hbWUiOiJMYXN0TmFtZU9mVXNlciIsImVtYWlsIjoidXNlckBtYWlsLmNvbSJ9.QWXVsxPD6tmdtW2X1B4ZjEmI1NI1xyi8M90DOtgoB3kOIRhpgG-PxrenLSHtGCe97v3FzIZu9Z9djMi1NwygEyEOTuRI_csiwsEiWdLgRlpgToMAxMHt2cwm1vwyqqWoicU_NX64WlUfBXKq5gwgqD6B_Ik5Eb2ej4IDK0_FJpB_5rIyx9FDdJE3Yo0Wm8H3X8UJJhPGik1A9t5owzLUnBH_IT1ehKAwlLB1JHBofa3Jtb8G5ruSfobpihNGYZE7IQsCHPZ4lic4inDisCz5QjqTz6wxnepHDmLcIeru5og8wLr_x82do3mKBKRxJNe-2ZqlUpmM__H0Z3zjNJSyOQ</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
@@ -89,8 +89,67 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Users\matthias.adrian\Documents\Bachelorarbeit\oauth2-access-control\jmeter-results\Test results Last-noOPA.csv</stringProp>
+          <stringProp name="filename">C:\Users\matthias.adrian\Documents\Bachelorarbeit\oauth2-access-control\jmeter-results\Test results Last-OPA.csv</stringProp>
         </ResultCollector>
+        <hashTree/>
+        <kg.apc.jmeter.perfmon.PerfMonCollector guiclass="kg.apc.jmeter.vizualizers.PerfMonGui" testclass="kg.apc.jmeter.perfmon.PerfMonCollector" testname="jp@gc - PerfMon Metrics Collector" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+          <longProp name="interval_grouping">1000</longProp>
+          <boolProp name="graph_aggregated">false</boolProp>
+          <stringProp name="include_sample_labels"></stringProp>
+          <stringProp name="exclude_sample_labels"></stringProp>
+          <stringProp name="start_offset"></stringProp>
+          <stringProp name="end_offset"></stringProp>
+          <boolProp name="include_checkbox_state">false</boolProp>
+          <boolProp name="exclude_checkbox_state">false</boolProp>
+          <collectionProp name="metricConnections">
+            <collectionProp name="1707275607">
+              <stringProp name="-2052196776">192.168.0.104</stringProp>
+              <stringProp name="1600768">4444</stringProp>
+              <stringProp name="66952">CPU</stringProp>
+              <stringProp name="0"></stringProp>
+            </collectionProp>
+            <collectionProp name="-593438714">
+              <stringProp name="-2052196776">192.168.0.104</stringProp>
+              <stringProp name="1600768">4444</stringProp>
+              <stringProp name="-1993889503">Memory</stringProp>
+              <stringProp name="0"></stringProp>
+            </collectionProp>
+          </collectionProp>
+        </kg.apc.jmeter.perfmon.PerfMonCollector>
         <hashTree/>
       </hashTree>
     </hashTree>
