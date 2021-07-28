@@ -18,12 +18,12 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1000</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">20</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">500</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">20</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
-        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
@@ -49,7 +49,7 @@
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Authorization</stringProp>
-                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJodDBCSGQ4aDFRX0NQdU9MTWoyVGppQkpkNnVrSVJPdXhGbWltYkVDYnNrIn0.eyJleHAiOjE2Mjc0MDI0ODYsImlhdCI6MTYyNzQwMDY4NiwianRpIjoiZjMxMmE5OTUtZDNjZS00NWViLTkxZmQtOGY2ZTE2OGQwYmM2IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDgwL2F1dGgvcmVhbG1zL3NhbXBsZSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiI4Y2Y4OTE0MC1lOGQ2LTQ4NTAtYjQxNi0zY2NlZGE5ODJlYzIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzYW1wbGUtYXBwIiwic2Vzc2lvbl9zdGF0ZSI6ImQ0Nzc3OTYyLTAzYmEtNGU4NC1hNjEwLWFjMjkwMjUxMTY5NSIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl0sIm5hbWUiOiJGaXJzdE5hbWVPZlVzZXIgTGFzdE5hbWVPZlVzZXIiLCJhdHRyaWJ1dGUxIjoiVXNlckF0dHJpYnV0ZTEiLCJncm91cHMiOlsiL1VzZXJzIl0sInByZWZlcnJlZF91c2VybmFtZSI6InVzZXIiLCJnaXZlbl9uYW1lIjoiRmlyc3ROYW1lT2ZVc2VyIiwiZmFtaWx5X25hbWUiOiJMYXN0TmFtZU9mVXNlciIsImVtYWlsIjoidXNlckBtYWlsLmNvbSJ9.vE5f0neb2om2FdGIfEBw40LS2h-GvH9ROZlTArSlCVHiHkXkp7Cn2kqW0kaES8rTOWPJCxex0EGd2OUg52BMF7vJPBzzlhUNEL1pWAf7T76OInyJR1somBIlkp6bbOBSbwpUKDeSg0K3clF2lKhHuUZVv47Yo2vYXCvUX4Hss4vHb6t2jqcRjMq_XGjNGehHRFPqo5wOpGiLIF7614tM8pfc4K1DW1PcK1hv5X2YP3mEpfb_VmGUMaOeRXz8O7Dok0bwlV84_VsLofGJB57Fk9k7NxmOpwKBN5_5zfR0RCOHnbMuxMf0cYfUPidIbnlNwPTyGQgh1oD6zm66s3Jurw </stringProp>
+                <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhUV83TjRENmN5MEVnVnVlR2ZrSWRobG5Ud1FoYi1IVDJlM21wWWFHV0o4In0.eyJleHAiOjE2Mjc0MjgzNTUsImlhdCI6MTYyNzQyNDc1NSwianRpIjoiMDQ4YjE0ZWMtYzFkOC00NTE0LWE3NGYtN2IyOWNjMGQ1MTczIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDgwL2F1dGgvcmVhbG1zL3NhbXBsZSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJiZjQ5Zjg3Zi02NmQ5LTQzY2UtYTc0Zi04MjMzZGNmZjgzYWIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzYW1wbGUtYXBwIiwic2Vzc2lvbl9zdGF0ZSI6IjA3MmU3NTRkLWQxODEtNDNkYi1hMTQ5LWM4MmU4NzhiMTM4MyIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1zYW1wbGUiLCJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl0sIm5hbWUiOiJGaXJzdE5hbWVPZlVzZXIgTGFzdE5hbWVPZlVzZXIiLCJhdHRyaWJ1dGUxIjoiVXNlckF0dHJpYnV0ZTEiLCJncm91cHMiOlsiL1VzZXJzIl0sInByZWZlcnJlZF91c2VybmFtZSI6InVzZXIiLCJnaXZlbl9uYW1lIjoiRmlyc3ROYW1lT2ZVc2VyIiwiZmFtaWx5X25hbWUiOiJMYXN0TmFtZU9mVXNlciIsImVtYWlsIjoidXNlckBtYWlsLmNvbSJ9.RiQ8DJJz2YNyRj3ea-M5qNoTkGAt9oUyzL4IVhRkEN3e9mR5uiafLwUcewu_ePbA_EX94OUl3aPR8-7qhpQJi5IiI3P6ZrShDObYk7Vb4k_xub-N7iozEc1ce83kIX2JtvZ3XC7n0o2BGsjIFp5QoZU_iJNAQPB-kuVWpFUceabHcHS37xXK24OukUgyQ5CfRGWDFWJmwEb85R8gycSgrExIv11QMW6anEeNTH5qpEwwi_CYpa5qvw_iiOnyeabwpYGiwi8xYPwSR1xCYFA9KjJbOMDneiHdVRvg1hmPFvNIND31kbkNNOU1uk2eQlkMT6YMnR8Kbju20AYrX7elUA</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
@@ -89,7 +89,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Users\matthias.adrian\Documents\Bachelorarbeit\oauth2-access-control\jmeter-results\Test results Last-OPA.csv</stringProp>
+          <stringProp name="filename">C:\Users\abc\Documents\h-da\Bachelorarbeit\oauth2-access-control\jmeter-results\Test results Last-OPA.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
