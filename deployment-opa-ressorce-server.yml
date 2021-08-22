@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: opa-ressorce-server
+  labels:
+    app: opa-ressorce-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: opa
+  template:
+    metadata:
+      labels:
+        app: opa
+      name: opa
+    spec:
+      containers:
+
+      - name: opa
+        image: openpolicyagent/opa:latest
+        ports:
+        - name: http
+          containerPort: 8181
+        args:
+        - "run"
+        - "--ignore=.*"  # exclude hidden dirs created by Kubernetes
+        - "--server"
+        - "/policies"
+        volumeMounts:
+        - readOnly: true
+          mountPath: /policies
+          name: example-policy
+      volumes:
+      - name: example-policy
+        configMap:
+          name: example-policy
+
+      - name: ressorce-server
+        image: oauth2-opa
+        ports:
+        - name: http
+          containerPort: 8080          
