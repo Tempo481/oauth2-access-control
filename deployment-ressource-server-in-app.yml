@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oauth2-in-app-auth-deployment
+  labels:
+    app: oauth2-in-app-auth
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: oauth2-in-app-auth
+  template:
+    metadata:
+      labels:
+        app: oauth2-in-app-auth
+    spec:
+      containers:
+      - name: oauth2-in-app-auth
+        image: oauth2-in-app-auth:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080

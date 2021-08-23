@@ -12,7 +12,7 @@ spec:
 
   containers:
 
-  - name: ressorce-server
+  - name: ressource-server
     image: oauth2-opa
     ports:
     - name: http
