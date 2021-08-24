@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: oauth2-in-app-auth
-        image: oauth2-in-app-auth:latest
-        imagePullPolicy: IfNotPresent
+        image: localhost:5000/oauth2-in-app-auth:latest
+        imagePullPolicy: Never
         ports:
         - containerPort: 8080
