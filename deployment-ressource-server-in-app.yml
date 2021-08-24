@@ -5,7 +5,7 @@ metadata:
   labels:
     app: oauth2-in-app-auth
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: oauth2-in-app-auth
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: oauth2-in-app-auth
-        image: localhost:5000/oauth2-in-app-auth:latest
-        imagePullPolicy: Never
+        image: oauth2-in-app-auth:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
