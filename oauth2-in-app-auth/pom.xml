@@ -73,6 +73,11 @@
 				  <to>
 				    <image>oauth2-in-app-auth</image>
 				  </to>
+				  <container>
+				  	<ports>
+				  		<port>8080</port>
+				  	</ports>				  
+				  </container>
 				</configuration>
 			</plugin>			
 		</plugins>
