@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: oauth2-in-app-auth-deployment
+  name: oauth2-in-app-auth
   labels:
     app: oauth2-in-app-auth
 spec:
