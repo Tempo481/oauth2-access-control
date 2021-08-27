@@ -76,7 +76,6 @@
 				  <container>
 				  	<ports>
 				  		<port>8080</port>
-				  		<port>9080</port>				  		
 				  	</ports>				  
 				  </container>
 				</configuration>

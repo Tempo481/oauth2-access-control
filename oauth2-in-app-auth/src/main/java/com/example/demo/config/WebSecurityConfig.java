@@ -14,7 +14,7 @@ import org.springframework.security.oauth2.server.resource.authentication.JwtGra
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-	private String issuerUri = "http://localhost:9080/auth/realms/sample";
+	private String issuerUri = "http://localhost/realms/sample";
 	
     @Override
     protected void configure(HttpSecurity http) throws Exception {
