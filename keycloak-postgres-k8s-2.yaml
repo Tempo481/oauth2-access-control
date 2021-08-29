@@ -1,0 +1,122 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+  namespace: default
+spec:
+  serviceName: postgres-jdbc
+  selector:
+  matchLabels:
+    app: postgres
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+        - name: postgres
+          image: postgres
+          ports:
+            - containerPort: 5432
+          volumeMounts:
+            - name: root
+              mountPath: /var/lib/postgresql/data
+          env:
+            - name: PGDATA
+              value: /var/lib/postgresql/data/pgdata
+            # The name of the PostgreSQL user, that will be used from the Keycloak
+            - name: POSTGRES_USER
+              value: keycloak
+            # The password for the PostgreSQL user, that will be used from the Keycloak
+            - name: POSTGRES_PASSWORD
+              value: keycloak
+      serviceAccountName: service-account
+  volumeClaimTemplates:
+    - metadata:
+        name: root
+      spec:
+        accessModes: [ "ReadWriteOnce" ]
+        resources:
+          requests:
+            storage: 1Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres-jdbc
+  namespace: default
+  labels:
+    app: postgres
+spec:
+  ports:
+  - port: 5432
+  type: ClusterIP
+  selector:
+    app: postgres
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: keycloak
+  labels:
+    app: keycloak
+spec:
+  ports:
+  - name: http
+    port: 9080
+    targetPort: 9080
+  selector:
+    app: keycloak
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: keycloak
+  namespace: default
+  labels:
+    app: keycloak
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: keycloak
+  template:
+    metadata:
+      labels:
+        app: keycloak
+    spec:
+      containers:
+      - name: keycloak
+        image: quay.io/keycloak/keycloak:12.0.4
+        env:
+        - name: KEYCLOAK_USER
+          value: "admin"
+        - name: KEYCLOAK_PASSWORD
+          value: "admin"
+        - name: PROXY_ADDRESS_FORWARDING
+          value: "true"
+        - name: DB_VENDOR
+          value: "postgres"
+        # The PostgreSQL user
+        - name: DB_USER
+          value: "keycloak"
+        # The PostgreSQL user's password
+        - name: DB_PASSWORD
+          value: "keycloak"
+        # The PostgreSQL database address: "<postgres-service-name>"."<namespace>"
+        - name: DB_ADDR
+          value: "postgres-jdbc.default"
+        ports:
+        - name: http
+          containerPort: 9080
+        - name: https
+          containerPort: 9443
+        args:
+        - "-Djboss.socket.binding.port-offset=1000"
+        readinessProbe:
+          httpGet:
+            path: /auth/realms/master
+            port: 9080
