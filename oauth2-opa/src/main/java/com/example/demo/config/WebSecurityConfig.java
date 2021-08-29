@@ -20,8 +20,8 @@ import org.springframework.security.oauth2.jwt.JwtDecoders;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	
-	private String issuerUri = "http://localhost:9080/auth/realms/sample";
-	private String jwkSetUri = "http://localhost:9080/auth/realms/sample/protocol/openid-connect/certs";
+	private String issuerUri = "http://keycloak:9080/auth/realms/Sample";
+	private String jwkSetUri = "http://keycloak:9080/auth/realms/sample/protocol/openid-connect/certs";
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -48,7 +48,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public AccessDecisionManager accessDecisionManager() {
         List<AccessDecisionVoter<? extends Object>> decisionVoters = Arrays
-                .asList(new OPAVoter("http://localhost:8181/v1/data/http/authz/allow"));
+                .asList(new OPAVoter("http://opa:8181/v1/data/http/authz/allow"));
         return new UnanimousBased(decisionVoters);
     }
 
