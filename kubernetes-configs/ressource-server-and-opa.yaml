@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: opa-ressource-server
+  name: ressource-server-and-opa
   labels:
-    app: opa-ressource-server
+    app: ressource-server-and-opa
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: opa
+      app: ressource-server-and-opa
   template:
     metadata:
       labels:
-        app: opa
-      name: opa
+        app: ressource-server-and-opa
+      name: ressource-server-and-opa
     spec:
       containers:
 
@@ -37,7 +37,27 @@ spec:
           name: example-policy
 
       - name: ressource-server
-        image: oauth2-opa
+        image: oauth2-opa:latest
         ports:
         - name: http
           containerPort: 8080          
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: ressource-server-and-opa
+  labels:
+    app: ressource-server-and-opa
+spec:
+  type: NodePort
+  selector:
+    app: ressource-server-and-opa
+  ports:
+    - name: http
+      protocol: TCP
+      port: 8181
+      targetPort: 8181
+    - name: http
+      protocol: TCP
+      port: 8080
+      targetPort: 8080                

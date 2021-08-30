@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: two-containers
+  name: opa-ressource-server-one-pod
 spec:
 
   restartPolicy: Never
@@ -12,8 +12,9 @@ spec:
 
   containers:
 
-  - name: ressource-server
-    image: oauth2-opa
+  - name: oauth2-opa
+    image: oauth2-opa:latest
+    imagePullPolicy: IfNotPresent
     ports:
     - name: http
       containerPort: 8080    

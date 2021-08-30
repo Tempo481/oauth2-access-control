@@ -34,23 +34,28 @@ spec:
       - name: keycloak
         image: quay.io/keycloak/keycloak:12.0.4
         env:
-        - name: KEYCLOAK_USER
-          value: "admin"
-        - name: KEYCLOAK_PASSWORD
-          value: "admin"
         - name: PROXY_ADDRESS_FORWARDING
           value: "true"
         - name: DB_VENDOR
           value: "postgres"
         # The PostgreSQL user
         - name: DB_USER
-          value: postgres
+          value: "postgres"
         # The PostgreSQL user's password
         - name: DB_PASSWORD
-          value: postgrespw
+          value: "postgrespw"
         # The PostgreSQL database address: "<postgres-service-name>"."<namespace>"
         - name: DB_ADDR
           value: "postgres-db-lb.default"
+        # The PostgreSQL database name
+        - name: DB_DATABASE
+          value: "postgres"
+        # The Keycloak user, which will be used for the Keycloak "Admin Console"
+        - name: KEYCLOAK_USER
+          value: "admin"
+        # The Keycloak user's password
+        - name: KEYCLOAK_PASSWORD
+          value: "admin"
         ports:
         - name: http
           containerPort: 9080

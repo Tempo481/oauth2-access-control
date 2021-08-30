@@ -30,14 +30,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .accessDecisionManager(accessDecisionManager())
                 .and()
-                .oauth2ResourceServer(oauth2ResourceServer ->
-                	oauth2ResourceServer
-                        .jwt(jwt -> jwt
-                                .decoder(jwtDecoder())
-                                .jwkSetUri(jwkSetUri)
-                        )
-        		);
-                
+    	        .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt);                
     }
 
     @Bean

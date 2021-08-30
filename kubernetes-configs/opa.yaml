@@ -5,7 +5,7 @@ metadata:
   labels:
     app: opa
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: opa
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: opa
-        image: openpolicyagent/opa:latest
+        image: openpolicyagent/opa:0.31.0
         ports:
         - name: http
           containerPort: 8181
@@ -34,3 +34,19 @@ spec:
       - name: example-policy
         configMap:
           name: example-policy
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: opa
+  labels:
+    app: opa
+spec:
+  type: LoadBalancer
+  selector:
+    app: opa
+  ports:
+    - name: http
+      protocol: TCP
+      port: 8181
+      targetPort: 8181
