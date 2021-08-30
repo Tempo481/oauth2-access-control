@@ -22,9 +22,9 @@ spec:
               mountPath: /data
           env:
             - name: POSTGRES_DATABASE
-              value: postgres
+              value: "postgres"
             - name: POSTGRES_PASSWORD
-              value: postgrespw
+              value: "keycloak"
             - name: PGDATA
               value: /data/pgdata
   # Volume Claim
