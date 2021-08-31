@@ -41,7 +41,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public AccessDecisionManager accessDecisionManager() {
         List<AccessDecisionVoter<? extends Object>> decisionVoters = Arrays
-                .asList(new OPAVoter("http://opa:8181/v1/data/http/authz/allow"));
+                .asList(new OPAVoter("http://localhost:8181/v1/data/http/authz/allow"));
         return new UnanimousBased(decisionVoters);
     }
 

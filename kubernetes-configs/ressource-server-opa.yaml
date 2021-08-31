@@ -19,7 +19,6 @@ spec:
         image: oauth2-opa:latest
         imagePullPolicy: IfNotPresent
         ports:
-        ports:
         - name: http
           containerPort: 8080
 ---

@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ressource-server-opa
+  labels:
+    app: ressource-server-opa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ressource-server-opa
+  template:
+    metadata:
+      labels:
+        app: ressource-server-opa
+    spec:
+      containers:
+      - name: oauth2-opa
+        image: oauth2-opa:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+
+      - name: opa
+        image: openpolicyagent/opa:0.31.0
+        ports:
+        - name: http
+          containerPort: 8181
+        args:
+        - "run"
+        - "--ignore=.*"  # exclude hidden dirs created by Kubernetes
+        - "--server"
+        - "/policies"
+        volumeMounts:
+        - readOnly: true
+          mountPath: /policies
+          name: example-policy
+      volumes:
+      - name: example-policy
+        configMap:
+          name: example-policy
