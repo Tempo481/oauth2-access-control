@@ -24,7 +24,7 @@ spec:
             - name: POSTGRES_DATABASE
               value: "postgres"
             - name: POSTGRES_PASSWORD
-              value: "keycloak"
+              value: "postgrespw"
             - name: PGDATA
               value: /data/pgdata
   # Volume Claim
